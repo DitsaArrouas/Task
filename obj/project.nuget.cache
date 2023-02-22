@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "4yr3zOkcfGRMnllf1lDWh2viZH69LJogDvxbMDVU1OPTfqyBT9IFPI41eK6KcXfMX7L5VVWZKaCn/NIVE1+9xw==",
+  "dgSpecHash": "FTyw/aV/hZtjboW2uqZ8fT6L1L1T1JGt+L55tr3N+ajuufb5inW0hqdtalVReSVS3JCpxIa93D51tT6p292h6w==",
   "success": true,
-  "projectFilePath": "H:\\לימודים יד\\להגשה\\דיני ובר ודיצה ארואס\\Tasks\\Tasks.csproj",
+  "projectFilePath": "C:\\Users\\Dell Vostro\\Desktop\\לימודים\\לימודים יד\\Core\\שב שלי\\Tasks\\Tasks.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Dell Vostro\\.nuget\\packages\\microsoft.aspnetcore.openapi\\7.0.1\\microsoft.aspnetcore.openapi.7.0.1.nupkg.sha512",
     "C:\\Users\\Dell Vostro\\.nuget\\packages\\microsoft.extensions.apidescription.server\\6.0.5\\microsoft.extensions.apidescription.server.6.0.5.nupkg.sha512",

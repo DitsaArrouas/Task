@@ -466,11 +466,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "H:\\לימודים יד\\להגשה\\דיני ובר ודיצה ארואס\\Tasks\\Tasks.csproj",
+      "projectUniqueName": "C:\\Users\\Dell Vostro\\Desktop\\לימודים\\לימודים יד\\Core\\שב שלי\\Tasks\\Tasks.csproj",
       "projectName": "Tasks",
-      "projectPath": "H:\\לימודים יד\\להגשה\\דיני ובר ודיצה ארואס\\Tasks\\Tasks.csproj",
+      "projectPath": "C:\\Users\\Dell Vostro\\Desktop\\לימודים\\לימודים יד\\Core\\שב שלי\\Tasks\\Tasks.csproj",
       "packagesPath": "C:\\Users\\Dell Vostro\\.nuget\\packages\\",
-      "outputPath": "H:\\לימודים יד\\להגשה\\דיני ובר ודיצה ארואס\\Tasks\\obj\\",
+      "outputPath": "C:\\Users\\Dell Vostro\\Desktop\\לימודים\\לימודים יד\\Core\\שב שלי\\Tasks\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

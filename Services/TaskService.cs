@@ -1,12 +1,12 @@
+using Tasks.Interfaces;
 using Tasks;
-using System.Collections.Generic;
 using System.Linq;
 
 namespace Tasks.Controllers
 {   
-    public static class TaskService
+    public class TaskService : ITaskHttp
     {    
-        private static List<Task> tasks = new List<Task>
+        private List<Task> tasks = new List<Task>
         {
             new Task { Name="homeWork",Id=1, Done = false},
             new Task { Name="cleanWindows",Id=2, Done = true},
@@ -14,22 +14,19 @@ namespace Tasks.Controllers
             new Task { Name="washDishes",Id=4, Done = true}
         };
 
-        public static List<Task> GetAll() => tasks;
-        public static Task Get(int id)
+        public List<Task> GetAll() => tasks;
+        public Task Get(int id)
         {
-            var task = tasks.FirstOrDefault(t => t.Id == id);
-            if (task == null)
-                return null;
-            return task;
+            return tasks.FirstOrDefault(t => t.Id == id);
         }
 
-        public static void Add(Task task)
+        public void Add(Task task)
         {
             task.Id = tasks.Max(t => t.Id) + 1;
             tasks.Add(task);
         }
 
-        public static bool Update(int id, Task newTask)
+        public bool Update(int id, Task newTask)
         {
             if (newTask.Id != id)
                 return false;
@@ -41,7 +38,7 @@ namespace Tasks.Controllers
             return true;
         }
 
-        public static bool Delete(int id)
+        public bool Delete(int id)
         {
             var task = tasks.FirstOrDefault(t => t.Id == id);
             if (task == null)
