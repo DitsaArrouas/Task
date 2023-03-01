@@ -1,19 +1,40 @@
 using Tasks.Interfaces;
 using Tasks;
 using System.Linq;
+using System.Text.Json;
+using Microsoft.AspNetCore.Hosting;
+using System.Collections.Generic;
+using System.Linq;
+using System.IO;
+using System;
+using System.Net;
+using Microsoft.AspNetCore.Hosting;
+
 
 namespace Tasks.Controllers
 {   
     public class TaskService : ITaskHttp
     {    
-        private List<Task> tasks = new List<Task>
+        List<Task> tasks {get;}
+        private IWebHostEnvironment  webHost;
+        private string filePath;
+        public TaskService(IWebHostEnvironment webHost)
         {
-            new Task { Name="homeWork",Id=1, Done = false},
-            new Task { Name="cleanWindows",Id=2, Done = true},
-            new Task { Name="shopping",Id=3, Done = false},
-            new Task { Name="washDishes",Id=4, Done = true}
-        };
-
+            this.webHost = webHost;
+            this.filePath = Path.Combine(webHost.ContentRootPath, "Data", "Tasks.json");
+            using (var jsonFile = File.OpenText(filePath))
+            {
+                tasks = JsonSerializer.Deserialize<List<Task>>(jsonFile.ReadToEnd(),
+                new JsonSerializerOptions
+                {
+                    PropertyNameCaseInsensitive = true
+                });
+            }
+        }
+        private void saveToFile()
+        {
+            File.WriteAllText(filePath, JsonSerializer.Serialize(tasks));
+        }
         public List<Task> GetAll() => tasks;
         public Task Get(int id)
         {
@@ -24,6 +45,7 @@ namespace Tasks.Controllers
         {
             task.Id = tasks.Max(t => t.Id) + 1;
             tasks.Add(task);
+            saveToFile();
         }
 
         public bool Update(int id, Task newTask)
@@ -35,6 +57,7 @@ namespace Tasks.Controllers
                 return false;
             task.Name = newTask.Name;
             task.Done = newTask.Done;
+            saveToFile();
             return true;
         }
 
@@ -44,6 +67,7 @@ namespace Tasks.Controllers
             if (task == null)
                 return false;
             tasks.Remove(task);
+            saveToFile();
             return true;
         }
     }

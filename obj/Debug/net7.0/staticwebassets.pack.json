@@ -1,0 +1,33 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\Dell Vostro\\Desktop\\לימודים\\לימודים יד\\Core\\שב שלי\\Tasks\\wwwroot\\css\\site.css",
+      "PackagePath": "staticwebassets\\css\\site.css"
+    },
+    {
+      "Id": "C:\\Users\\Dell Vostro\\Desktop\\לימודים\\לימודים יד\\Core\\שב שלי\\Tasks\\wwwroot\\index.html",
+      "PackagePath": "staticwebassets\\index.html"
+    },
+    {
+      "Id": "C:\\Users\\Dell Vostro\\Desktop\\לימודים\\לימודים יד\\Core\\שב שלי\\Tasks\\wwwroot\\js\\site.js",
+      "PackagePath": "staticwebassets\\js\\site.js"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.Tasks.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.build.Tasks.props",
+      "PackagePath": "build\\Tasks.props"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.buildMultiTargeting.Tasks.props",
+      "PackagePath": "buildMultiTargeting\\Tasks.props"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.buildTransitive.Tasks.props",
+      "PackagePath": "buildTransitive\\Tasks.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

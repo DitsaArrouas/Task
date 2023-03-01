@@ -31,3 +31,5 @@ C:\Users\Dell Vostro\Desktop\לימודים\לימודים יד\Core\שב שלי
 C:\Users\Dell Vostro\Desktop\לימודים\לימודים יד\Core\שב שלי\Tasks\obj\Debug\net7.0\Tasks.pdb
 C:\Users\Dell Vostro\Desktop\לימודים\לימודים יד\Core\שב שלי\Tasks\obj\Debug\net7.0\Tasks.genruntimeconfig.cache
 C:\Users\Dell Vostro\Desktop\לימודים\לימודים יד\Core\שב שלי\Tasks\obj\Debug\net7.0\ref\Tasks.dll
+C:\Users\Dell Vostro\Desktop\לימודים\לימודים יד\Core\שב שלי\Tasks\bin\Debug\net7.0\Data\Tasks.json
+C:\Users\Dell Vostro\Desktop\לימודים\לימודים יד\Core\שב שלי\Tasks\bin\Debug\net7.0\Tasks.staticwebassets.runtime.json
