@@ -1,8 +1,19 @@
 const uri = '/Task';
 let tasks = [];
+const token = window.sessionStorage.getItem('token');
+
+//getItems();
 
 function getItems() {
-    fetch(uri)
+    console.log("getItems");
+    fetch(uri, {
+        method: 'GET',
+        headers: {
+            'Accept': 'application/json',
+            'Authorization': `Bearer ${token}`,
+            //'Content-Type': 'application/json'
+        }
+    })
         .then(response => response.json())
         .then(data => _displayItems(data))
         .catch(error => console.error('Unable to get items.', error));
@@ -10,7 +21,6 @@ function getItems() {
 
 function addItem() {
     const addNameTextbox = document.getElementById('add-Name');
-
     const item = {
         done: false,
         name: addNameTextbox.value.trim()
@@ -20,6 +30,7 @@ function addItem() {
             method: 'POST',
             headers: {
                 'Accept': 'application/json',
+                'Authorization': `Bearer ${token}`,
                 'Content-Type': 'application/json'
             },
             body: JSON.stringify(item)
@@ -34,7 +45,10 @@ function addItem() {
 
 function deleteItem(id) {
     fetch(`${uri}/${id}`, {
-            method: 'DELETE'
+            method: 'DELETE',
+            headers: {
+                'Authorization': `Bearer ${token}`,
+            },
         })
         .then(() => getItems())
         .catch(error => console.error('Unable to delete item.', error));
@@ -42,7 +56,6 @@ function deleteItem(id) {
 
 function displayEditForm(id) {
     const item = tasks.find(item => item.id === id);
-
     document.getElementById('edit-Name').value = item.name;
     document.getElementById('edit-Id').value = item.id;
     document.getElementById('edit-Done').checked = item.done;
@@ -56,12 +69,12 @@ function updateItem() {
         done: document.getElementById('edit-Done').checked,
         name: document.getElementById('edit-Name').value.trim()
     };
-
     fetch(`${uri}/${itemId}`, {
             method: 'PUT',
             headers: {
                 'Accept': 'application/json',
-                'Content-Type': 'application/json'
+                'Content-Type': 'application/json',
+                'Authorization': `Bearer ${token}`,
             },
             body: JSON.stringify(item)
         })

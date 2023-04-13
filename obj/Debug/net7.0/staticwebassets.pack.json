@@ -5,8 +5,16 @@
       "PackagePath": "staticwebassets\\css\\site.css"
     },
     {
+      "Id": "C:\\Users\\Dell Vostro\\Desktop\\לימודים\\לימודים יד\\Core\\שב שלי\\Tasks\\wwwroot\\html\\Tasks.html",
+      "PackagePath": "staticwebassets\\html\\Tasks.html"
+    },
+    {
       "Id": "C:\\Users\\Dell Vostro\\Desktop\\לימודים\\לימודים יד\\Core\\שב שלי\\Tasks\\wwwroot\\index.html",
       "PackagePath": "staticwebassets\\index.html"
+    },
+    {
+      "Id": "C:\\Users\\Dell Vostro\\Desktop\\לימודים\\לימודים יד\\Core\\שב שלי\\Tasks\\wwwroot\\js\\login.js",
+      "PackagePath": "staticwebassets\\js\\login.js"
     },
     {
       "Id": "C:\\Users\\Dell Vostro\\Desktop\\לימודים\\לימודים יד\\Core\\שב שלי\\Tasks\\wwwroot\\js\\site.js",

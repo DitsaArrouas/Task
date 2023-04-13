@@ -1,0 +1,12 @@
+2023-04-14 12:23:34 [Debug] time took to GET request /html/Tasks.html : 0
+2023-04-14 12:23:34 [Debug] time took to GET request /swagger/index.html : 10
+2023-04-14 12:23:34 [Debug] time took to GET request /Task : 2
+2023-04-14 12:23:34 [Debug] time took to GET request /swagger/v1/swagger.json : 4
+2023-04-14 12:23:44 [Debug] time took to POST request /User/Login : 4
+2023-04-14 12:23:44 [Debug] time took to GET request /Task : 0
+2023-04-14 12:23:48 [Debug] time took to POST request /Task : 6
+2023-04-14 12:23:48 [Debug] time took to GET request /Task : 0
+2023-04-14 12:23:53 [Debug] time took to PUT request /Task/6 : 4
+2023-04-14 12:23:53 [Debug] time took to GET request /Task : 0
+2023-04-14 12:23:54 [Debug] time took to DELETE request /Task/6 : 3
+2023-04-14 12:23:54 [Debug] time took to GET request /Task : 0

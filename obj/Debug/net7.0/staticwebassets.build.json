@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "jFLOHiS8sdSC83Y1VQVtkDHegjqHiwilYsOHPtOveJs=",
+  "Hash": "qtxWu0PnVOoB9Tn61ft/TQrm/FfblqkVVkjwZ/uHGxw=",
   "Source": "Tasks",
   "BasePath": "_content/Tasks",
   "Mode": "Default",
@@ -34,6 +34,23 @@
       "OriginalItemSpec": "wwwroot\\css\\site.css"
     },
     {
+      "Identity": "C:\\Users\\Dell Vostro\\Desktop\\לימודים\\לימודים יד\\Core\\שב שלי\\Tasks\\wwwroot\\html\\Tasks.html",
+      "SourceId": "Tasks",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Dell Vostro\\Desktop\\לימודים\\לימודים יד\\Core\\שב שלי\\Tasks\\wwwroot\\",
+      "BasePath": "_content/Tasks",
+      "RelativePath": "html/Tasks.html",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\html\\Tasks.html"
+    },
+    {
       "Identity": "C:\\Users\\Dell Vostro\\Desktop\\לימודים\\לימודים יד\\Core\\שב שלי\\Tasks\\wwwroot\\index.html",
       "SourceId": "Tasks",
       "SourceType": "Discovered",
@@ -49,6 +66,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\index.html"
+    },
+    {
+      "Identity": "C:\\Users\\Dell Vostro\\Desktop\\לימודים\\לימודים יד\\Core\\שב שלי\\Tasks\\wwwroot\\js\\login.js",
+      "SourceId": "Tasks",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Dell Vostro\\Desktop\\לימודים\\לימודים יד\\Core\\שב שלי\\Tasks\\wwwroot\\",
+      "BasePath": "_content/Tasks",
+      "RelativePath": "js/login.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\login.js"
     },
     {
       "Identity": "C:\\Users\\Dell Vostro\\Desktop\\לימודים\\לימודים יד\\Core\\שב שלי\\Tasks\\wwwroot\\js\\site.js",

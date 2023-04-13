@@ -9,13 +9,15 @@ using System.IO;
 using System;
 using System.Net;
 using Microsoft.AspNetCore.Hosting;
+using Tasks.Controllers;
+using System.IdentityModel.Tokens.Jwt;
 
 
-namespace Tasks.Controllers
+namespace Tasks.Services
 {   
     public class TaskService : ITaskHttp
     {    
-        List<Task> tasks {get;}
+        List<Task>? tasks {get;}
         private IWebHostEnvironment  webHost;
         private string filePath;
         public TaskService(IWebHostEnvironment webHost)
@@ -35,25 +37,35 @@ namespace Tasks.Controllers
         {
             File.WriteAllText(filePath, JsonSerializer.Serialize(tasks));
         }
-        public List<Task> GetAll() => tasks;
-        public Task Get(int id)
+        public string GetIdToken(string idtoken)
         {
-            return tasks.FirstOrDefault(t => t.Id == id);
+            var token = new JwtSecurityToken(jwtEncodedString: idtoken.Split(" ")[1]);
+            string id = token.Claims.First(c => c.Type == "id").Value;
+            return id;
         }
+        public List<Task> GetAll(string token)
+        {
+            string Id = GetIdToken(token);
+            System.Console.WriteLine(Id);
+            return tasks.FindAll(t => t.UserId.CompareTo(Id) == 0).ToList();
+        }
+        // public Task? Get(int id, string token)
+        // {
+        //     return tasks.FirstOrDefault(t => t.Id == id);
+        // }
 
-        public void Add(Task task)
+        public void Add(Task task, string token)
         {
             task.Id = tasks.Max(t => t.Id) + 1;
+            task.UserId = GetIdToken(token);
             tasks.Add(task);
             saveToFile();
         }
 
-        public bool Update(int id, Task newTask)
+        public bool Update(int id, Task newTask, string token)
         {
-            if (newTask.Id != id)
-                return false;
             var task = tasks.FirstOrDefault(t => t.Id == id);
-            if (task == null)
+            if (newTask.Id != id || GetIdToken(token)!= task?.UserId || task == null)
                 return false;
             task.Name = newTask.Name;
             task.Done = newTask.Done;
@@ -61,10 +73,10 @@ namespace Tasks.Controllers
             return true;
         }
 
-        public bool Delete(int id)
+        public bool Delete(int id, string token)
         {
             var task = tasks.FirstOrDefault(t => t.Id == id);
-            if (task == null)
+            if (task == null || GetIdToken(token)!= task?.UserId)
                 return false;
             tasks.Remove(task);
             saveToFile();

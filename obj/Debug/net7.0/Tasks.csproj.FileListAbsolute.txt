@@ -33,3 +33,11 @@ C:\Users\Dell Vostro\Desktop\לימודים\לימודים יד\Core\שב שלי
 C:\Users\Dell Vostro\Desktop\לימודים\לימודים יד\Core\שב שלי\Tasks\obj\Debug\net7.0\ref\Tasks.dll
 C:\Users\Dell Vostro\Desktop\לימודים\לימודים יד\Core\שב שלי\Tasks\bin\Debug\net7.0\Data\Tasks.json
 C:\Users\Dell Vostro\Desktop\לימודים\לימודים יד\Core\שב שלי\Tasks\bin\Debug\net7.0\Tasks.staticwebassets.runtime.json
+C:\Users\Dell Vostro\Desktop\לימודים\לימודים יד\Core\שב שלי\Tasks\bin\Debug\net7.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Users\Dell Vostro\Desktop\לימודים\לימודים יד\Core\שב שלי\Tasks\bin\Debug\net7.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\Dell Vostro\Desktop\לימודים\לימודים יד\Core\שב שלי\Tasks\bin\Debug\net7.0\Microsoft.IdentityModel.Logging.dll
+C:\Users\Dell Vostro\Desktop\לימודים\לימודים יד\Core\שב שלי\Tasks\bin\Debug\net7.0\Microsoft.IdentityModel.Protocols.dll
+C:\Users\Dell Vostro\Desktop\לימודים\לימודים יד\Core\שב שלי\Tasks\bin\Debug\net7.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\Dell Vostro\Desktop\לימודים\לימודים יד\Core\שב שלי\Tasks\bin\Debug\net7.0\Microsoft.IdentityModel.Tokens.dll
+C:\Users\Dell Vostro\Desktop\לימודים\לימודים יד\Core\שב שלי\Tasks\bin\Debug\net7.0\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\Dell Vostro\Desktop\לימודים\לימודים יד\Core\שב שלי\Tasks\bin\Debug\net7.0\Data\Users.json
